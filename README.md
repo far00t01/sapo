@@ -18,18 +18,18 @@
 🐸 SAPO is an advanced wireless security auditing tool designed to automate handshake captures and extract intelligence through PNL (Preferred Network List) Disclosure.
 
 ## Disclaimer
-This tool is provided for educational purposes and authorized ethical auditing only. Using SAPO against networks without explicit permission is illegal. The author is not responsible for any misuse of this software.
+This tool is provided for educational purposes and authorized ethical auditing only. Using 🐸 SAPO against networks without explicit permission is illegal. The author is not responsible for any misuse of this software.
 
 _Developed by: Fabián Rosales [@far00t01](https://github.com/far00t01)_
 
-## Why use SAPO?
+## Why use 🐸 SAPO?
 The true power of SAPO lies not just in disconnecting users, but in the intelligence gathered during the process:
 
 **Handshake Capture for Cracking**
-- SAPO automates the injection of deauthentication frames to force clients to reconnect. During this reconnection, the tool captures the 4-way handshake, which is essential for performing offline brute-force or dictionary attacks to recover the network password using tools like Hashcat or John the Ripper.
+- 🐸 SAPO automates the injection of deauthentication frames to force clients to reconnect. During this reconnection, the tool captures the 4-way handshake, which is essential for performing offline brute-force or dictionary attacks to recover the network password using tools like Hashcat or John the Ripper.
 
 **Hidden SSID Revelation**
-- Many Access Points hide their SSID (Network Name). However, when a client attempts to connect to a hidden network, it broadcasts a "Probe Request" containing the network name. SAPO analyzes these requests, allowing you to identify hidden SSIDs by correlating the activity of deauthenticated clients.
+- Many Access Points hide their SSID (Network Name). However, when a client attempts to connect to a hidden network, it broadcasts a "Probe Request" containing the network name. 🐸 SAPO analyzes these requests, allowing you to identify hidden SSIDs by correlating the activity of deauthenticated clients.
 
 **Evil Twin Attack Preparation**
 - By discovering the PNL (the list of preferred/trusted networks) of a target, an auditor knows exactly which network names the device considers "safe."
