@@ -52,7 +52,7 @@ For 🐸 SAPO to work correctly, your wireless adapter must support Monitor Mode
 
 # Installation & Usage
 ```bash
-git clone [https://github.com/far00t01/SAPO.git](https://github.com/far00t01/SAPO.git)
+git clone https://github.com/far00t01/SAPO.git
 cd SAPO
 pip install -r requirements.txt
 ```
