@@ -15,7 +15,7 @@
   </a>
 </div>
 
-SAPO is an advanced wireless security auditing tool designed to automate handshake captures and extract intelligence through PNL (Preferred Network List) Disclosure.
+🐸 SAPO is an advanced wireless security auditing tool designed to automate handshake captures and extract intelligence through PNL (Preferred Network List) Disclosure.
 
 ## Disclaimer
 This tool is provided for educational purposes and authorized ethical auditing only. Using SAPO against networks without explicit permission is illegal. The author is not responsible for any misuse of this software.
