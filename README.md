@@ -20,7 +20,7 @@
 ## Disclaimer
 This tool is provided for educational purposes and authorized ethical auditing only. Using 🐸 SAPO against networks without explicit permission is illegal. The author is not responsible for any misuse of this software.
 
-_Developed by: Fabián Rosales [@far00t01](https://github.com/far00t01)_
+_Developed by: Fabián Rosales [@far00t01](https://medium.com/@far00t01)_
 
 ## Why use 🐸 SAPO?
 The true power of SAPO lies not just in disconnecting users, but in the intelligence gathered during the process:
