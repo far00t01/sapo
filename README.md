@@ -17,6 +17,9 @@
 
 🐸 SAPO is an advanced wireless security auditing tool designed to automate handshake captures and extract intelligence through PNL (Preferred Network List) Disclosure.
 
+## The Art of "Sapear"
+The name is a nod to a popular Chilean slang term. In Chile, "Sapear" means to pry, to snoop, or to discreetly keep a watchful eye on something. That is exactly what SAPO does: it stays in the shadows, listening to the secrets that devices broadcast without even knowing it.
+
 ## Disclaimer
 This tool is provided for educational purposes and authorized ethical auditing only. Using 🐸 SAPO against networks without explicit permission is illegal. The author is not responsible for any misuse of this software.
 
