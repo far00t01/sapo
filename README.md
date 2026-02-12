@@ -25,14 +25,14 @@ _Developed by: Fabián Rosales [@far00t01](https://github.com/far00t01)_
 ## Why use SAPO
 The true power of SAPO lies not just in disconnecting users, but in the intelligence gathered during the process:
 
-- Handshake Capture for Cracking
-SAPO automates the injection of deauthentication frames to force clients to reconnect. During this reconnection, the tool captures the 4-way handshake, which is essential for performing offline brute-force or dictionary attacks to recover the network password using tools like Hashcat or John the Ripper.
+Handshake Capture for Cracking
+- SAPO automates the injection of deauthentication frames to force clients to reconnect. During this reconnection, the tool captures the 4-way handshake, which is essential for performing offline brute-force or dictionary attacks to recover the network password using tools like Hashcat or John the Ripper.
 
-- Hidden SSID Revelation
-Many Access Points hide their SSID (Network Name). However, when a client attempts to connect to a hidden network, it broadcasts a "Probe Request" containing the network name. SAPO analyzes these requests, allowing you to identify hidden SSIDs by correlating the activity of deauthenticated clients.
+Hidden SSID Revelation
+- Many Access Points hide their SSID (Network Name). However, when a client attempts to connect to a hidden network, it broadcasts a "Probe Request" containing the network name. SAPO analyzes these requests, allowing you to identify hidden SSIDs by correlating the activity of deauthenticated clients.
 
-- Evil Twin Attack Preparation
-By discovering the PNL (the list of preferred/trusted networks) of a target, an auditor knows exactly which network names the device considers "safe."
+Evil Twin Attack Preparation
+- By discovering the PNL (the list of preferred/trusted networks) of a target, an auditor knows exactly which network names the device considers "safe."
 Strategy: If a client is probing for "Home_WiFi_123", you can set up a Rogue Access Point (Evil Twin) with that exact name. After deauthenticating them from their current network, the device will automatically connect to your rogue AP because it recognizes the SSID as a trusted one.
 
 - Behavioral Profiling (OSINT)
