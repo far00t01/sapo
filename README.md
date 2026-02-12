@@ -22,21 +22,21 @@ This tool is provided for educational purposes and authorized ethical auditing o
 
 _Developed by: Fabián Rosales [@far00t01](https://github.com/far00t01)_
 
-## Why use SAPO
+## Why use SAPO?
 The true power of SAPO lies not just in disconnecting users, but in the intelligence gathered during the process:
 
-Handshake Capture for Cracking
+**Handshake Capture for Cracking**
 - SAPO automates the injection of deauthentication frames to force clients to reconnect. During this reconnection, the tool captures the 4-way handshake, which is essential for performing offline brute-force or dictionary attacks to recover the network password using tools like Hashcat or John the Ripper.
 
-Hidden SSID Revelation
+**Hidden SSID Revelation**
 - Many Access Points hide their SSID (Network Name). However, when a client attempts to connect to a hidden network, it broadcasts a "Probe Request" containing the network name. SAPO analyzes these requests, allowing you to identify hidden SSIDs by correlating the activity of deauthenticated clients.
 
-Evil Twin Attack Preparation
+**Evil Twin Attack Preparation**
 - By discovering the PNL (the list of preferred/trusted networks) of a target, an auditor knows exactly which network names the device considers "safe."
 Strategy: If a client is probing for "Home_WiFi_123", you can set up a Rogue Access Point (Evil Twin) with that exact name. After deauthenticating them from their current network, the device will automatically connect to your rogue AP because it recognizes the SSID as a trusted one.
 
-- Behavioral Profiling (OSINT)
-A PNL acts as a digital footprint. Seeing a device probing for networks like "Sede_Office_A", "London_Heathrow_FreeWiFi", or "Luxury_Hotel_Spain" allows an auditor to build a geographical and professional profile of the target user based on their connection history.
+**Behavioral Profiling (OSINT)**
+- A PNL acts as a digital footprint. Seeing a device probing for networks like "Sede_Office_A", "London_Heathrow_FreeWiFi", or "Luxury_Hotel_Spain" allows an auditor to build a geographical and professional profile of the target user based on their connection history.
 
 ### Main Features
 - PNL Discovery: Real-time mapping of which MAC addresses are probing for which SSIDs.
