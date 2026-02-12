@@ -39,6 +39,7 @@ Strategy: If a client is probing for "Home_WiFi_123", you can set up a Rogue Acc
 ## Main Features
 - PNL Discovery: Real-time mapping of which MAC addresses are probing for which SSIDs.
 - Deep Scanning: Color-coded Signal Power (PWR) visualization, channel tracking, and active client counting.
+- Multichannel Intelligence: Integrated channel hopping engine to monitor the entire 2.4GHz spectrum (and 5GHz if supported) simultaneously before targeting.
 - Automatic Conversion: Exports to .pcap and generates .hc22000 files compatible with Hashcat.
 - Safe Restoration: Automatically reverts the network interface to its original "Managed" state upon exit.
 
@@ -50,8 +51,10 @@ For 🐸 SAPO to work correctly, your wireless adapter must support Monitor Mode
 
 # Installation
 ```bash
+sudo apt update && sudo apt install hcxtools tcpdump -y
 git clone https://github.com/far00t01/SAPO.git
 cd SAPO
+python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -64,7 +67,9 @@ sudo python3 sapo.py
 Every session creates a folder named [SSID]-result/ containing:
 - handshake.pcap: Raw traffic capture.
 - handshake.hc22000: Hash formatted for Hashcat. You can crack the `.hc22000` file using: `hashcat -m 22000 handshake.hc22000 wordlist.txt` 
-- pnl-discovery.txt: Detailed log of discovered networks per client.
+- pnl-discovery.txt: Detailed log of discovered networks per client. Note: PNL results may include false positives from networks intercepted while in transit. Connection HITS serve as the primary metric to filter and authenticate the most relevant networks for the auditor.
+
+_⚠️ Note: PNL results may include "noise" or false positives from transient networks (e.g., airport or hotel Wi-Fi) intercepted while in transit. Connection HITS should be used as the primary metric to identify and validate high-confidence target networks._
 
 ## Author
 _Developed by: Fabián Rosales [@far00t01](https://medium.com/@far00t01)_
