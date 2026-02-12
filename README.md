@@ -50,7 +50,7 @@ For SAPO to work correctly, your wireless adapter must support Monitor Mode and 
 - Alfa AWUS036ACH: Powerful dual-band, Realtek RTL8812AU chipset (requires driver installation).
 - Alfa AWUS036NHA: 2.4GHz, Atheros AR9271 chipset. Extremely stable and native to Kali Linux.
 
-## Installation & Usage
+# Installation & Usage
 ```
 git clone https://github.com/your-username/SAPO.git
 cd SAPO
