@@ -1,14 +1,28 @@
-# sapo
-SAPO is an advanced wireless auditing tool designed to automate handshake captures and extract intelligence through PNL (Preferred Network List) disclosure from client devices.
+<div align="center">
 
+# 🐸 SAPO v1.1 — Beyond Deauthentication
+### *Wireless Auditing & PNL Disclosure Tool*
 
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Scapy](https://img.shields.io/badge/Library-Scapy-red.svg)](https://scapy.net/)
+[![Platform: Linux](https://img.shields.io/badge/Platform-Linux-lightgrey.svg)](https://www.linux.org/)
+</div>
 
-### Disclaimer
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=mLPtlVVfAF4">
+    <img src="https://github.com/user-attachments/assets/5644e0fc-1dab-4342-8bd8-74d97bf7ce1f" alt="SAPO in action" width="600">
+  </a>
+</div>
+
+SAPO is an advanced wireless security auditing tool designed to automate handshake captures and extract intelligence through PNL (Preferred Network List) Disclosure.
+
+## Disclaimer
 This tool is provided for educational purposes and authorized ethical auditing only. Using SAPO against networks without explicit permission is illegal. The author is not responsible for any misuse of this software.
 
-_Developed by: Fabián Rosales (@far00t01)_
+_Developed by: Fabián Rosales [@far00t01](https://github.com/far00t01)_
 
-### Why use SAPO
+## Why use SAPO
 The true power of SAPO lies not just in disconnecting users, but in the intelligence gathered during the process:
 
 - Handshake Capture for Cracking
@@ -30,7 +44,7 @@ A PNL acts as a digital footprint. Seeing a device probing for networks like "Se
 - Automatic Conversion: Exports to .pcap and generates .hc22000 files compatible with Hashcat.
 - Safe Restoration: Automatically reverts the network interface to its original "Managed" state upon exit.
 
-##### Recommended Hardware (Monitor Mode & Injection)
+### Recommended Hardware (Monitor Mode & Injection)
 For SAPO to work correctly, your wireless adapter must support Monitor Mode and Packet Injection. Below is a list of tested and compatible hardware:
 - Alfa AWUS036ACM: Dual-band (2.4GHz/5GHz), MT7612U chipset. Excellent plug-and-play support in Linux.
 - Alfa AWUS036ACH: Powerful dual-band, Realtek RTL8812AU chipset (requires driver installation).
