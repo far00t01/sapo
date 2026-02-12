@@ -20,8 +20,6 @@
 ## Disclaimer
 This tool is provided for educational purposes and authorized ethical auditing only. Using 🐸 SAPO against networks without explicit permission is illegal. The author is not responsible for any misuse of this software.
 
-_Developed by: Fabián Rosales [@far00t01](https://medium.com/@far00t01)_
-
 ## Why use 🐸 SAPO?
 The true power of SAPO lies not just in disconnecting users, but in the intelligence gathered during the process:
 
@@ -68,3 +66,5 @@ Every session creates a folder named [SSID]-result/ containing:
 - handshake.hc22000: Hash formatted for Hashcat. You can crack the `.hc22000` file using: `hashcat -m 22000 handshake.hc22000 wordlist.txt` 
 - pnl-discovery.txt: Detailed log of discovered networks per client.
 
+## Author
+_Developed by: Fabián Rosales [@far00t01](https://medium.com/@far00t01)_
