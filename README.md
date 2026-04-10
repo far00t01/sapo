@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐸 SAPO v1.1 — Beyond Deauthentication
+# 🐸 SAPO - Beyond Deauthentication
 ### *Wireless Auditing & PNL Disclosure Tool*
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
